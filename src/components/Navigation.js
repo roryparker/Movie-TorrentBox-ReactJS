@@ -24,9 +24,9 @@ class Navigation extends React.Component {
                         <Nav.Link href="#" onClick={()=>{this.props.changePage("",undefined,true)}}>Home</Nav.Link>
                         <Nav.Link href="#" onClick={()=>{this.props.changePage("search")}}>Search</Nav.Link>
                         <NavDropdown title="More" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#" onClick={()=>{this.props.changePage("","ice age",true)}}>Ice Age</NavDropdown.Item>
-                        <NavDropdown.Item href="#" onClick={()=>{this.props.changePage("","harry potter",true)}}>Harry Potter</NavDropdown.Item>
-                        <NavDropdown.Item href="#" onClick={()=>{this.props.changePage("","penguins",true)}}>Penguins</NavDropdown.Item>
+                        <NavDropdown.Item href="#" onClick={()=>{this.props.changePage("","james bond",true)}}>James Bond</NavDropdown.Item>
+                        <NavDropdown.Item href="#" onClick={()=>{this.props.changePage("","star wars",true)}}>Star Wars</NavDropdown.Item>
+                        <NavDropdown.Item href="#" onClick={()=>{this.props.changePage("","X-Men",true)}}>X-Men</NavDropdown.Item>
                       </NavDropdown>
                     </Nav>
                    

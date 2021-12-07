@@ -6,6 +6,7 @@ import {Container,Row,Col} from 'react-bootstrap';
 import Navigation from './components/Navigation';
 import SingleMoviePage from './components/SingleMoviePage';
 import Search from './components/Search';
+import Flexview from './components/Flexview.js';
 
 class App extends React.Component {
 
@@ -14,7 +15,7 @@ class App extends React.Component {
     super();
 
     this.state = {
-      title:"batman",
+      title:"marvel",
       movies: [],
       isLoaded: false,
       error:null,
@@ -30,7 +31,7 @@ class App extends React.Component {
 
   searchForMovie = ()=>{
 
-     fetch("http://www.omdbapi.com/?apikey=60227e40&s="+this.state.title+"&page=2")
+     fetch("http://www.omdbapi.com/?i=tt3896198&apikey=c577c47f&s="+this.state.title+"&page=2")
      .then(res => res.json())
      .then(
        (result) => {

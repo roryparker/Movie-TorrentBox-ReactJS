@@ -29,7 +29,7 @@ class Search extends React.Component {
         var titleInput =  this.titleInput.current.value;
         var yearInput = this.yearInput.current.value;
 
-        fetch("http://www.omdbapi.com//?apikey=60227e40&t="+titleInput+"&y="+yearInput)
+        fetch("http://www.omdbapi.com/?i=tt3896198&apikey=c577c47f&s="+titleInput+"&y="+yearInput)
         .then(res => res.json())
         .then(
           (result) => {
